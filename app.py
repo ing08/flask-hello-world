@@ -9,7 +9,7 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage,)
 app = Flask(__name__)
 
 # get environmental value from heroku
-ACCESS_TOKEN = "PS2JWVbGfcIHobnI0EhT4fn3xPfd45g8JkgZfKM/5f9AkqfxUG1nxFNvpQQmyG8XvHIPEydUm9iFbxRa1n95QUi1epZNGB6GekWNh3G2ujaQV4+CU27t6zM+UQZ5kh4P2qtYDdohhj3liawxWn1/Ddohhj3liawxWn1/"
+ACCESS_TOKEN = "PS2JWVbGfcIHobnI0EhT4fn3xPfd45g8JkgZfKM/5f9AkqfxUG1nxFNvpQQmyG8XvHIPEydUm9iFbxRa1n95QUi1epZNGB6GekWNh3G2ujaQV4+CU27t6zM+UQZ5kh4P2qtYDdohhj3liawxWnneewdB04t89/1O/w1cDnyilFU="
 CHANNEL_SECRET = "ee3db97e23b52e93e578fcf335ab6fd2"
 line_bot_api = LineBotApi(ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
