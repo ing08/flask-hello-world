@@ -61,4 +61,6 @@ def send():
         line_bot_api.push_message('<to>', TextSendMessage(text='Hello World!'))
     except LineBotApiError as e:
         # error handle
-        print(e)
+        print("Invalid signature. Please check your channel access token/channel secret.")
+        abort(400)
+    return 'OK'
