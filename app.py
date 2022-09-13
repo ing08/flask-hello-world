@@ -62,5 +62,5 @@ def send():
     except LineBotApiError as e:
         # error handle
         print("Invalid signature. Please check your channel access token/channel secret.")
-        abort(400)
+        # abort(400)
     return 'OK'
