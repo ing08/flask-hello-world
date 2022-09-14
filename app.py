@@ -46,7 +46,7 @@ def handle_message(event):
         TextSendMessage(text=event.message.text))
 
 #プッシュメッセージ
-@app.route("/send")
+@app.route("/send/{message}")
 def push_message(message):
     line_bot_api.broadcast(
             [
